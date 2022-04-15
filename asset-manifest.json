@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jkirschnik12/jkirschnik12.github.io/static/css/main.80d21e4e.css",
-    "main.js": "/jkirschnik12/jkirschnik12.github.io/static/js/main.93655584.js",
-    "static/js/787.cbd18162.chunk.js": "/jkirschnik12/jkirschnik12.github.io/static/js/787.cbd18162.chunk.js",
-    "index.html": "/jkirschnik12/jkirschnik12.github.io/index.html",
-    "main.80d21e4e.css.map": "/jkirschnik12/jkirschnik12.github.io/static/css/main.80d21e4e.css.map",
-    "main.93655584.js.map": "/jkirschnik12/jkirschnik12.github.io/static/js/main.93655584.js.map",
-    "787.cbd18162.chunk.js.map": "/jkirschnik12/jkirschnik12.github.io/static/js/787.cbd18162.chunk.js.map"
+    "main.css": "/static/css/main.80d21e4e.css",
+    "main.js": "/static/js/main.07f380b2.js",
+    "static/js/787.cbd18162.chunk.js": "/static/js/787.cbd18162.chunk.js",
+    "index.html": "/index.html",
+    "main.80d21e4e.css.map": "/static/css/main.80d21e4e.css.map",
+    "main.07f380b2.js.map": "/static/js/main.07f380b2.js.map",
+    "787.cbd18162.chunk.js.map": "/static/js/787.cbd18162.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.80d21e4e.css",
-    "static/js/main.93655584.js"
+    "static/js/main.07f380b2.js"
   ]
 }
