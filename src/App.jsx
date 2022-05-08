@@ -1,5 +1,10 @@
 import './App.css';
 
+function addDay (date) {
+  date.setDate(date.getDate() + 1);
+  return date;
+}
+
 function getNumWorkDays(startDate, endDate) {
   var numWorkDays = 0;
   var currentDate = new Date(startDate);
@@ -8,16 +13,10 @@ function getNumWorkDays(startDate, endDate) {
       if (currentDate.getDay() !== 0 && currentDate.getDay() !== 6) {
           numWorkDays++;
       }
-      currentDate = currentDate.addDays(1);
+      currentDate = addDay(currentDate);
   }
   return numWorkDays;
 }
-
-Date.prototype.addDays = function (days) {
-  var date = new Date(this.valueOf());
-  date.setDate(date.getDate() + days);
-  return date;
-};
 
 function App() {
   const currentTime = new Date();
