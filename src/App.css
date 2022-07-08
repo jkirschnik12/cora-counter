@@ -19,35 +19,29 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 1.5vmin);
+  font-size: calc(15px + 1.5vmin);
 
 }
 
 h1 {
-  margin: 0;
-}
-
-table {
-  margin-top: 10px;
-  margin: 10 auto;
-}
-
-th {
-  padding: 0px 12px 0px 12px;
-  font-size: calc(15px + 2vmin);
-  text-align: center;
   margin: 0 auto;
-  justify-content: center;
-  width: 130px;
-  line-height: 35px;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
 }
 
-td {
-  text-align: center;
-  padding: 0px 12px 0px 12px;
-  width: 130px;
-  font-size: calc(80px + 2vmin);
-  color: gold;
+.title {
+  color: white;
   justify-content: center;
-  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.col {
+  text-align: center;
+}
+
+.data {
+  color:turquoise;
+  justify-content: center;
 }

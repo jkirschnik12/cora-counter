@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function addDay(date) {
   date.setDate(date.getDate() + 1);
@@ -21,7 +26,7 @@ function getNumWorkDays(startDate, endDate) {
 
 function timeUntilDone() {
   const currentTime = new Date();
-  const lastDay = new Date(2022, 7, 12);
+  const lastDay = new Date(2022, 7, 12, 17, 0);
   const difference = Math.abs(lastDay - currentTime);
   return {
     days: Math.ceil(difference / (1000 * 60 * 60 * 24)),
@@ -43,24 +48,47 @@ function App() {
   const workDays = getNumWorkDays(currentTime, lastDay);
   return (
     <>
-      <header>Cora Countdown to last day of work (8/12)</header>
+      <header>LAST DAY OF WORK 8/12</header>
       <body className="App-header">
-        <table>
-          <tr>
-          <th>Total Days</th>
-          <th>Work Days</th>
-          <th>Hours</th>
-          <th>Min</th>
-          <th>Sec</th>
-          </tr>
-          <tr>
-            <td>{time.days}</td>
-            <td>{workDays}</td>
-            <td>{time.hours}</td>
-            <td>{time.minutes}</td>
-            <td>{time.seconds}</td>
-          </tr>
-        </table>
+        <Container fluid>
+          <Row style={{ marginBottom: "10px" }}>
+            <Col>
+              <Button href="https://bit.ly/3IkpWRT" target="_blank">
+                CLICK ME
+              </Button>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="justify-content-md-center">
+              <h1 className="title">Total Days: </h1>
+              <h1 className="data">{time.days}</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="justify-content-md-center">
+              <h1 className="title">Work Days: </h1>
+              <h1 className="data">{workDays}</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="justify-content-md-center">
+              <h1 className="title">Hours: </h1>
+              <h1 className="data">{time.hours}</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="justify-content-md-center">
+              <h1 className="title">Minutes: </h1>
+              <h1 className="data">{time.minutes}</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="justify-content-md-center">
+              <h1 className="title">Seconds: </h1>
+              <h1 className="data">{time.seconds}</h1>
+            </Col>
+          </Row>
+        </Container>
       </body>
     </>
   );
